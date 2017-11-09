@@ -11,12 +11,12 @@ namespace Banco
 
         public override void Saca(double valor)
         {
-            Saldo -= (valor + 0.1);
+            base.Saca(valor + 0.1);
         }
 
         public override void Deposita(double valor)
         {
-            Saldo += (valor - 0.5);
+            base.Deposita(valor - 0.1);
         }
     }
 }
